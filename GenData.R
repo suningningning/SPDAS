@@ -57,14 +57,14 @@ get.data = function(n, p, betatrue, sigma, rho, seednum, kind, cs.ita){
   # 	p                dimension 
   #   betatrue         p-dim vector 
   # 	sigma            noise level for observation
-  #	  rho              correlation parameter of X 
-  # 	seednum          the seed number for repeatability and reproducibility
+  #       rho              correlation parameter of X 
+  #     seednum          the seed number for repeatability and reproducibility
   #   kind    	       design matrix type: 1 = Classical Gaussian matrix (small p); 2 = Random Gaussian matrix (big p); 
   #   cs.ita           censor time ~ Uniform(0,cs.ita)
   # OUTPUT:
   # 	X                design matrix 
   # 	y                response vector 
-  #   c0               censor time
+  #      c0               censor time
   #------------------------------------------------------------------------
   # fix seed 
   set.seed(seednum)
@@ -88,9 +88,9 @@ censor.rate = function(cs.ita,n,p,betatrue,sigma,rho,kind,sim){
   # INPUT:
   #   cs.ita           censor time ~ Uniform(0,cs.ita)
   # 	n                sample size
-  # 	p                dimension 
+  #     p                dimension 
   #   betatrue         p-dim vector 
-  # 	sigma            noise level for observation
+  #    sigma            noise level for observation
   #   rho              correlation parameter of X 
   #   kind    	       design matrix type: 1 = Classical Gaussian matrix (small p); 2 = Random Gaussian matrix (big p); 
   # OUTPUT:
@@ -98,7 +98,7 @@ censor.rate = function(cs.ita,n,p,betatrue,sigma,rho,kind,sim){
   #------------------------------------------------------------------------
   c.r = 0
   for(i in 1:sim){
-    data = get.data(n,p,betatrue,sigma,rho,i*1000,kind,cs.ita)
+    data = get.data(n,p,betatrue,sigma,rho,i,kind,cs.ita)
     c.r = c.r + mean(data[[2]] > data[[3]])
   }
   c.r = c.r/sim

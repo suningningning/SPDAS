@@ -9,7 +9,7 @@ PDAS = function(ita, d, lambda, K, x, y, n, p){
   # 	d              initial value p-dim vector d for PDAS  
   #   lambda         threshold to define active set  
   # 	K              The maximum number of iterations for PDAS 
-  #   x              design matrix (after data processing)
+  #       x              design matrix (after data processing)
   # 	y              response vector (after data processing)
   # 	n              sample size 
   # 	p              dimension 

@@ -1,5 +1,5 @@
 #===================================================================
-# Demo: solving AFT L0 regularization problem via SPDAS 
+# Demo: solving AFT L0 regularizatio problem via SPDAS 
 #-------------------------------------------------------------------
 # Written by:
 #              Lican Kang (kanglican@whu.edu.cn)
@@ -54,3 +54,10 @@ RE = round(sqrt(sum((result[[1]] - betatrue)^2)/sum((betatrue)^2)),4)
 MS = length(betahatsupp)
 RP = all(sort(betahatsupp) == sort(supptrue))
 time = t.end - t.start
+
+AE 
+RE
+MS
+RP 
+time 
+
