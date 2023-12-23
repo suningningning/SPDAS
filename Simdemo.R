@@ -54,10 +54,3 @@ RE = round(sqrt(sum((result[[1]] - betatrue)^2)/sum((betatrue)^2)),4)
 MS = length(betahatsupp)
 RP = all(sort(betahatsupp) == sort(supptrue))
 time = t.end - t.start
-
-AE 
-RE
-MS
-RP 
-time 
-
