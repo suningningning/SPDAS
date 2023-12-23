@@ -1,5 +1,5 @@
 #===================================================================
-# Demo: solving AFT L0 regularizatio problem via SPDAS 
+# Demo: solving AFT L0 regularization problem via SPDAS 
 #-------------------------------------------------------------------
 # Written by:
 #              Lican Kang (kanglican@whu.edu.cn)
